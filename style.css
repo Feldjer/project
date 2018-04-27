@@ -1,0 +1,72 @@
+﻿body{
+ background-image: url(img/3.jpg)
+}
+header{
+ margin-top: 0px;
+ font-family: Roboto, Arial, sans-serif;
+}
+
+/*Меню*/
+
+.dws-menu *{
+margin: 0;
+padding: 0;
+}
+.dws-menu ul,
+.dws-menu ol{
+ list-style: none;
+}
+.dws-menu > ul{
+ display: flex;
+ justify-content: center;
+}
+.dws-menu > ul li a{
+ display: block;
+ background: #D2691E;
+ padding: 15px 30px 15px 40px;
+ font-size: 18px;
+ color: #ffffff;
+ text-decoration: none;
+ text-transform: uppercase;
+ transition: all 0.3s ease;
+}
+.dws-menu > ul li{
+ position: relative;
+ border: 1px solid #ffffff;
+}
+.dws-menu > ul li > a i.fa{
+ position: absolute;
+ top: 15px;
+ left: 12px;
+ font-size: 18px;
+}
+.dws-menu > ul li:first-child{
+ border-left: 1px solid #ffffff;
+}
+.dws-menu > ul li:last-child{
+ border-right: 1px solid #ffffff;
+}
+.dws-menu li a:hover{
+ background: #4169E1;
+ color: #ffffff;
+ box-shadow: 1px 5px 10px -5px black;
+ transition: all 0.3s ease;
+}
+
+/*Под меню*/
+.dws-menu li ul{
+ position: absolute;
+ min-width: 150px;
+ display: none;
+}
+.dws-menu li > ul li{
+ border: 1px solid #c7c8ca
+}
+.dws-menu li> ul li a{
+ padding: 10px;
+ text-transform: none;
+ background: #e4e4e5
+}
+.dws-menu li:hover > ul{
+ display: block;
+}
