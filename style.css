@@ -1,15 +1,17 @@
 ﻿body{
- background-image: url(img/3.jpg)
+ background-image: url(img/41.jpg);
 }
 header{
- margin-top: 0px;
+ margin-left: 10px;
  font-family: Roboto, Arial, sans-serif;
+}
+html, body{
+ margin: 0;
+ padding: 0;
 }
 
 /*Меню*/
-
 .dws-menu *{
-margin: 0;
 padding: 0;
 }
 .dws-menu ul,
@@ -22,7 +24,7 @@ padding: 0;
 }
 .dws-menu > ul li a{
  display: block;
- background: #D2691E;
+ background: #FF7400;
  padding: 15px 30px 15px 40px;
  font-size: 18px;
  color: #ffffff;
@@ -47,7 +49,7 @@ padding: 0;
  border-right: 1px solid #ffffff;
 }
 .dws-menu li a:hover{
- background: #4169E1;
+ background: #feb57e;
  color: #ffffff;
  box-shadow: 1px 5px 10px -5px black;
  transition: all 0.3s ease;
@@ -56,17 +58,211 @@ padding: 0;
 /*Под меню*/
 .dws-menu li ul{
  position: absolute;
- min-width: 150px;
+ min-width: 132px;
  display: none;
+}
+.dws-menu li > ul li:first-child{
+ border-left: 1px solid #c7c8ca;	
+}
+.dws-menu li > ul li:last-child{
+ border-right: 1px solid #c7c8ca;
 }
 .dws-menu li > ul li{
  border: 1px solid #c7c8ca
 }
 .dws-menu li> ul li a{
- padding: 10px;
+ padding: 10px; /*Ширина под меню*/
  text-transform: none;
  background: #e4e4e5
 }
 .dws-menu li:hover > ul{
  display: block;
+}
+
+/*Форма заполнения*/
+a{
+  color: #fff; /*Цвет ссылки (Восстановить пароль)*/
+}
+a:hover{
+ text-decoration: none; /*При наведение подчеркивание*/
+}
+.container{
+ width: 200px; /*Ширина блока*/
+ height: 190px; /*Высота блока*/
+ background-color: #FF7400; /*Цвет блока*/
+ margin: 10px 5px auto auto; /*ПОЗИЦИОНИРВАНИЕ*/
+ border-radius: 7px; /*Закругления блока*/
+ border: 2px solid #a64500; /*Цвет и размер обводки рамки*/
+ padding: 10px; /* Поля вокруг текста */
+ text-align: center;
+}
+input[type="text"], input[type="password"]{ /*Отюбираем заполнения*/
+ width: 180px; /*Ширина заполнения*/
+ height: 30px; /*Высота заполнения*/
+ font-size: 15px; /*Размер букв в заполнении*/
+ margin-bottom: 10px; /*Отсуп между заполнениями*/
+ border-radius: 5px; /*Закругления заполнений*/
+ padding-left: 30px; /*Сдвиг текста*/
+}
+.dws-submit {
+ padding: 6px 30px; /*Высота и ширина кнопки*/
+ margin: 4px 0 4px 0; /*Отсуп сверху, справо, снизу, слева*/
+ font-size: 15px; /*Размер текста в конпке*/
+ color: #fff; /*Цвет текста в кнопке*/
+ background-color: #a64500; /*Цвет кнопки*/
+ border-radius: 5px; /*Закругления кнопки*/
+ border: none; /*Отключение обводки*/
+ border-bottom: 4px; /*Сдвиг текста*/
+ cursor: pointer; /*Изменение вида курсора*/
+}
+.dws-submit:hover{
+ transition: all 0.5s;
+ background: #be4a0a;
+ color: #fff;
+}
+.dws-input::before{
+ font-family: "FontAwesome";
+ content: "\f007";
+ position: absolute;
+ font-size: 25px;
+ padding: 3px 1px 1px 7px;
+ color: #a64500;
+}
+.dws-input:nth-child(2)::before{
+ content: "\f023";
+}
+.dws-input:hover::before{
+ color: #be4a0a;
+ transition: 0.3s;
+}
+.dws-input input:hover{
+ box-shadow: 0 0 6px 3px rgba(166,69,0,0.5);
+}
+.social i{
+ color: #a64500;
+ font-size: 20px;
+ margin: -20px 0 8px 0; /*Отсуп сверху, справо, снизу, слева*/
+ padding: 4px;
+}
+.social i:hover{
+ background-color: #a64500;
+ color: #FF7400;
+ border-radius: 5px;
+ cursor: pointer; /*Изменение вида курсора*/
+}
+.dws {
+ position: absolute;
+ margin: 180px 0 25px 20px;
+} 
+.butt {
+ border: 3px solid #a64500;
+ border-radius: 45px;
+ font-size: 50px;
+ color: #a64500;
+ text-decoration: none;
+ text-transform: uppercase;
+ width: 60px;
+ height: 60px;
+ display: block;
+ text-align: center;
+ position: relative;
+ transition: .5s;
+ overflow: hidden;
+}
+.butt::before,
+.butt::after {
+ position: absolute;
+ content: '';
+ width: 100%;
+ height: 100%;
+ background: #FF7400;
+ top: 0;
+ left: -100%;
+ opacity: .5;
+ transition: .3s;
+ z-index: -1;
+ border: none;
+}
+.butt::after {
+ opacity: 1;
+ transition-delay: .2s;
+}
+.butt:hover {
+ color: #a64500;
+ width: 70px;
+ height: 70px;
+ font-size: 60px;
+}
+.butt:hover::before,
+.butt:hover::after {
+ left: 0;
+}
+.picture{
+ display: block;
+ margin: -230px auto;
+ width: 878px;
+ height: 1800px;
+ background-color: #faf1d0;
+}
+.kor{
+ max-width: 100%; /*Не выходит за рамки div*/
+ width: 300px;
+ height: 160px;
+ margin: 20px 15px;
+ border: 1px solid black;
+ float: left;
+}
+.kor1{
+ position: static;
+ max-width: 100%;
+ max-height: 100%; /*Не выходит за рамки div*/
+ width: 848px;
+ height: 160px;
+ margin: 25px 0 0 15px;
+ border: 1px solid orange;
+ float: left;
+}
+
+.image {
+ display: block;
+ margin: -230px auto;
+ width: 878px;
+ height: 1800px;
+}
+.imagee {
+ max-height: 100%;
+ max-width: 100%;
+ text-align: right;
+ margin: 20px 15px;
+ width: 515px;
+ height: 162px;
+}
+
+.text {
+ display: block;
+ position: relative;
+ max-width: 100%;
+ max-height: 100%;
+ width: 515px;
+ height: 162px;
+ text-align: center;
+ margin: 20px 15px;
+ top: -1570px;
+ left: 332px;
+ font-size: 19px;
+ line-height: 1.5;
+}
+.text1 {
+ display: block;
+ position: relative;
+ max-width: 100%;
+ max-height: 100%;
+ width: 515px;
+ height: 162px;
+ text-align: center;
+ margin: 20px 15px;
+ font-size: 19px;
+ line-height: 1.5;
+ border: 2px solid red;
+ top: -1350px;
 }
