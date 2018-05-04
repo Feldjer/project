@@ -1,0 +1,86 @@
+<b><tt>ДУМАЕТЕ СОЗДАВАТЬ ПЕРЕЗЕНТАЦИИ ЭТО ДОЛГО?<br />
+НЕ МОЖЕТЕ ПОДОБРАТЬ ПРАВИЛЬНЫЙ ЦВЕТ?<br />
+СОЗДАЕТЕ НЕ ЧИТАБЕЛЬНЫЕ ПРЕЗЕНТАЦИИ?<br />
+ИЛИ НАОБОРОТ ДОБАВЛЯЕТЕ СЛШКОМ МНОГО ТЕКСТА?<br />
+С НАШИМ КУРСОМ ВЫ МОЖЕТЕ ИЗБАВИТЬСЯ ОТ ВСЕХ ПРОБЛЕМ РАЗ И НАВСЕГДА!</tt></b>
+
+
+<div class="img5">
+<img src="img/5.jpg" align="left" width="230" height="128" />
+</div>
+
+max-width: 550px;
+max-height: 300px;
+background-color: #faf1d0;
+margin: -215px auto;
+text-align: center;
+font-size: 20px;
+
+
+  для фона
+  height: 400px;
+ 
+	font-size: 20px;
+	
+	
+	
+	
+<div class="image">
+	<img class="fon" src="img/4.jpg">
+	<div class="content">
+		<p><img class="left" src="img/4.jpg">
+			ДУМАЕТЕ СОЗДАВАТЬ ПЕРЕЗЕНТАЦИИ ЭТО ДОЛГО?
+			НЕ МОЖЕТЕ ПОДОБРАТЬ ПРАВИЛЬНЫЙ ЦВЕТ?
+			СОЗДАЕТЕ НЕ ЧИТАБЕЛЬНЫЕ ПРЕЗЕНТАЦИИ?
+			ИЛИ НАОБОРОТ ДОБАВЛЯЕТЕ СЛШКОМ МНОГО ТЕКСТА?
+			С НАШИМ КУРСОМ ВЫ МОЖЕТЕ ИЗБАВИТЬСЯ ОТ ВСЕХ ПРОБЛЕМ РАЗ И НАВСЕГДА!
+		</p>
+	</div>
+</div>
+
+
+<div class="container">
+    <form>
+		<div class="dws-input">
+			<input type="text" name ="username" placeholder="Введите логин">
+		</div>
+		<div class="dws-input">
+			<input type="password" name ="password" placeholder="Введите пароль">
+		</div>
+			<input class="dws-submit" type="submit" name ="submit" value="ВОЙТИ">
+			<br />
+			<a href="#">Регистрация</a>
+			<br />
+			<a href="#">Восстановить пароль</a>
+    </form>
+    <div class="social">
+	 <i class="fa fa-vk" aria-hidden="true"></i>
+	 <i class="fa fa-twitter" aria-hidden="true"></i>
+	 <i class="fa fa-facebook" aria-hidden="true"></i>
+	 <i class="fa fa-google-plus" aria-hidden="true"></i>
+	 <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+	</div>
+</div>
+
+
+ text-align: right;
+ line-height: 60px;
+ font-family: Arial, sans-serif;
+ 
+ 
+ 
+ 
+ <div class="text2">
+	 НЕ МОЖЕТЕ ПОДОБРАТЬ ПРАВИЛЬНЫЙ ЦВЕТ? 
+	 СОЗДАЕТЕ НЕ ЧИТАБЕЛЬНЫЕ ПРЕЗЕНТАЦИИ? 
+	 ИЛИ НАОБОРОТ ДОБАВЛЯЕТЕ СЛШКОМ МНОГО ТЕКСТА? 
+	 С НАШИМ КУРСОМ ВЫ МОЖЕТЕ ИЗБАВИТЬСЯ ОТ ВСЕХ ПРОБЛЕМ РАЗ И НАВСЕГДА!
+  </div>
+  
+  
+
+<div class="picture">
+
+  <img class="kor1" src="img/7.jpg">
+	
+		<img src="img/1.jpg" />
